@@ -8,3 +8,5 @@ The approach is the same as the one used in overlays in Chatbot scripts - a webs
 
 ## How to use
 The project consists of a single file that can be directly imported as a script. The purpose of the project is to use it as a base, in particular the notification-handling functionality should be added in the class TwitchNotificationHandler.
+
+For the script to work you must connect to Streamlabs and add API keys to it.
