@@ -87,7 +87,6 @@ def stop_websocket():
 
 def parse_api_data(fname):
     result = {}
-    log('here')
     with open(fname, 'r') as file:
         data = file.read()
     declarations = list(filter(lambda x: '=' in x, data.split('var')))
@@ -97,7 +96,6 @@ def parse_api_data(fname):
         split = list(map(lambda x: x.strip(), dec.split('=')))
         result[split[0]] = (split[1][1:-1] if split[1][0] == '"' or split[1][0] == "'" else split[1]).strip()
     
-    log(result)
     return result
 
 #---------------------------
